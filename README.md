@@ -9,7 +9,7 @@
 ## 📁 PROJECT FOLDER STRUCTURE ==>
 
 Customer-Issue-Resolution-Analysis/<br>
-|
+|<br>
 ├── 1. Project_Guidelines/<br>
 ├── 2. Sample_Dataset/<br>
 ├── 3. Data_Cleaning/<br>
