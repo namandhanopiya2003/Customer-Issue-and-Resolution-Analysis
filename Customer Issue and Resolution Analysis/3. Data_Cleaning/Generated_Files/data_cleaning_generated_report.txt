@@ -1,0 +1,382 @@
+===========================================================================
+CUSTOMER ISSUE & RESOLUTION ANALYSIS
+MODULE 3 - DATA CLEANING & PREPARATION
+===========================================================================
+
+1. BASIC DATASET INFORMATION
+---------------------------------------------------------------------------
+Number of rows    : 8469
+Number of columns : 17
+
+Column Names:
+1. Ticket ID
+2. Customer Name
+3. Customer Email
+4. Customer Age
+5. Customer Gender
+6. Product Purchased
+7. Date of Purchase
+8. Ticket Type
+9. Ticket Subject
+10. Ticket Description
+11. Ticket Status
+12. Resolution
+13. Ticket Priority
+14. Ticket Channel
+15. First Response Time
+16. Time to Resolution
+17. Customer Satisfaction Rating
+
+
+2. DATA TYPES
+---------------------------------------------------------------------------
+Ticket ID: int64
+Customer Name: object
+Customer Email: object
+Customer Age: int64
+Customer Gender: object
+Product Purchased: object
+Date of Purchase: object
+Ticket Type: object
+Ticket Subject: object
+Ticket Description: object
+Ticket Status: object
+Resolution: object
+Ticket Priority: object
+Ticket Channel: object
+First Response Time: object
+Time to Resolution: object
+Customer Satisfaction Rating: float64
+
+
+3. MISSING VALUES
+---------------------------------------------------------------------------
+                              Missing Values  Missing Percentage
+Ticket ID                                  0                0.00
+Customer Name                              0                0.00
+Customer Email                             0                0.00
+Customer Age                               0                0.00
+Customer Gender                            0                0.00
+Product Purchased                          0                0.00
+Date of Purchase                           0                0.00
+Ticket Type                                0                0.00
+Ticket Subject                             0                0.00
+Ticket Description                         0                0.00
+Ticket Status                              0                0.00
+Resolution                              5700               67.30
+Ticket Priority                            0                0.00
+Ticket Channel                             0                0.00
+First Response Time                     2819               33.29
+Time to Resolution                      5700               67.30
+Customer Satisfaction Rating            5700               67.30
+
+
+4. DUPLICATE CHECK
+---------------------------------------------------------------------------
+Duplicate rows: 0
+Duplicate Ticket IDs: 0
+
+
+5. CATEGORICAL VALUE VALIDATION
+---------------------------------------------------------------------------
+
+Customer Gender
+Number of unique values: 3
+  - Female
+  - Male
+  - Other
+
+Product Purchased
+Number of unique values: 42
+  - Adobe Photoshop
+  - Amazon Echo
+  - Amazon Kindle
+  - Apple AirPods
+  - Asus ROG
+  - Autodesk AutoCAD
+  - Bose QuietComfort
+  - Bose SoundLink Speaker
+  - Canon DSLR Camera
+  - Canon EOS
+  - Dell XPS
+  - Dyson Vacuum Cleaner
+  - Fitbit Charge
+  - Fitbit Versa Smartwatch
+  - Garmin Forerunner
+  - GoPro Action Camera
+  - GoPro Hero
+  - Google Nest
+  - Google Pixel
+  - HP Pavilion
+  - LG OLED
+  - LG Smart TV
+  - LG Washing Machine
+  - Lenovo ThinkPad
+  - MacBook Pro
+  - Microsoft Office
+  - Microsoft Surface
+  - Microsoft Xbox Controller
+  - Nest Thermostat
+  - Nikon D
+  - Nintendo Switch
+  - Nintendo Switch Pro Controller
+  - Philips Hue Lights
+  - PlayStation
+  - Roomba Robot Vacuum
+  - Samsung Galaxy
+  - Samsung Soundbar
+  - Sony 4K HDR TV
+  - Sony PlayStation
+  - Sony Xperia
+  - Xbox
+  - iPhone
+
+Ticket Type
+Number of unique values: 5
+  - Billing inquiry
+  - Cancellation request
+  - Product inquiry
+  - Refund request
+  - Technical issue
+
+Ticket Subject
+Number of unique values: 16
+  - Account access
+  - Battery life
+  - Cancellation request
+  - Data loss
+  - Delivery problem
+  - Display issue
+  - Hardware issue
+  - Installation support
+  - Network problem
+  - Payment issue
+  - Peripheral compatibility
+  - Product compatibility
+  - Product recommendation
+  - Product setup
+  - Refund request
+  - Software bug
+
+Ticket Status
+Number of unique values: 3
+  - Closed
+  - Open
+  - Pending Customer Response
+
+Ticket Priority
+Number of unique values: 4
+  - Critical
+  - High
+  - Low
+  - Medium
+
+Ticket Channel
+Number of unique values: 4
+  - Chat
+  - Email
+  - Phone
+  - Social media
+
+
+6. NUMERICAL DATA VALIDATION
+---------------------------------------------------------------------------
+
+Customer Age
+Minimum : 18
+Maximum : 70
+Mean    : 44.03
+Median  : 44.0
+
+Customer Satisfaction Rating
+Minimum : 1.0
+Maximum : 5.0
+Mean    : 2.99
+Median  : 3.0
+
+
+7. DATE / TIME VALIDATION
+---------------------------------------------------------------------------
+
+Date of Purchase
+Valid date/time values   : 8469
+Invalid/blank values     : 0
+Earliest value           : 2020-01-01 00:00:00
+Latest value             : 2021-12-30 00:00:00
+
+First Response Time
+Valid date/time values   : 5650
+Invalid/blank values     : 2819
+Earliest value           : 2023-05-31 21:55:39
+Latest value             : 2023-06-02 00:54:21
+
+Time to Resolution
+Valid date/time values   : 2769
+Invalid/blank values     : 5700
+Earliest value           : 2023-05-31 21:53:30
+Latest value             : 2023-06-02 00:55:33
+
+
+8. TICKET STATUS DISTRIBUTION
+---------------------------------------------------------------------------
+Ticket Status
+Pending Customer Response    2881
+Open                         2819
+Closed                       2769
+
+
+9. TICKET PRIORITY DISTRIBUTION
+---------------------------------------------------------------------------
+Ticket Priority
+Medium      2192
+Critical    2129
+High        2085
+Low         2063
+
+
+10. TICKET CHANNEL DISTRIBUTION
+---------------------------------------------------------------------------
+Ticket Channel
+Email           2143
+Phone           2132
+Social media    2121
+Chat            2073
+
+
+11. TICKET TYPE DISTRIBUTION
+---------------------------------------------------------------------------
+Ticket Type
+Refund request          1752
+Technical issue         1747
+Cancellation request    1695
+Product inquiry         1641
+Billing inquiry         1634
+
+
+12. PRODUCT DISTRIBUTION
+---------------------------------------------------------------------------
+Product Purchased
+Canon EOS                         240
+GoPro Hero                        228
+Nest Thermostat                   225
+Philips Hue Lights                221
+Amazon Echo                       221
+LG Smart TV                       219
+Sony Xperia                       217
+Roomba Robot Vacuum               216
+Apple AirPods                     213
+LG OLED                           213
+iPhone                            212
+Sony 4K HDR TV                    210
+Garmin Forerunner                 208
+LG Washing Machine                208
+Canon DSLR Camera                 206
+Nikon D                           204
+Nintendo Switch Pro Controller    203
+Google Pixel                      203
+Fitbit Charge                     202
+Sony PlayStation                  202
+HP Pavilion                       200
+Microsoft Office                  200
+Amazon Kindle                     198
+Google Nest                       198
+Dyson Vacuum Cleaner              198
+Bose SoundLink Speaker            197
+Autodesk AutoCAD                  196
+Microsoft Xbox Controller         196
+Samsung Galaxy                    194
+PlayStation                       192
+Fitbit Versa Smartwatch           191
+Microsoft Surface                 190
+Bose QuietComfort                 190
+Samsung Soundbar                  188
+Xbox                              187
+Asus ROG                          187
+MacBook Pro                       186
+Dell XPS                          185
+Lenovo ThinkPad                   183
+GoPro Action Camera               183
+Adobe Photoshop                   181
+Nintendo Switch                   178
+
+
+13. CUSTOMER SATISFACTION DISTRIBUTION
+---------------------------------------------------------------------------
+Customer Satisfaction Rating
+1.0     553
+2.0     549
+3.0     580
+4.0     543
+5.0     544
+NaN    5700
+
+
+14. LOGICAL DATA QUALITY CHECKS
+---------------------------------------------------------------------------
+Invalid customer ages: 0
+Invalid satisfaction ratings (outside 1-5): 0
+
+
+15. STATUS VS MISSING VALUES
+---------------------------------------------------------------------------
+
+Resolution missing values by Ticket Status:
+Ticket Status
+Closed                          0
+Open                         2819
+Pending Customer Response    2881
+
+Time to Resolution missing values by Ticket Status:
+Ticket Status
+Closed                          0
+Open                         2819
+Pending Customer Response    2881
+
+Customer Satisfaction Rating missing values by Ticket Status:
+Ticket Status
+Closed                          0
+Open                         2819
+Pending Customer Response    2881
+
+First Response Time missing values by Ticket Status:
+Ticket Status
+Closed                          0
+Open                         2819
+Pending Customer Response       0
+
+
+16. TICKET ID VALIDATION
+---------------------------------------------------------------------------
+Minimum Ticket ID: 1
+Maximum Ticket ID: 8469
+Unique Ticket IDs : 8469
+Total records     : 8469
+
+
+17. TEXT FIELD QUALITY CHECK
+---------------------------------------------------------------------------
+
+Ticket Description
+Non-missing values : 8469
+Empty/blank strings: 0
+Minimum text length: 151
+Maximum text length: 397
+Average text length: 289.82
+
+Resolution
+Non-missing values : 2769
+Empty/blank strings: 0
+Minimum text length: 11
+Maximum text length: 69
+Average text length: 35.80
+
+
+18. DATE CONSISTENCY CHECK
+---------------------------------------------------------------------------
+Purchase dates before 2022: 8469
+Purchase dates from 2022 onward: 0
+
+
+===========================================================================
+DATA CLEANING INSPECTION COMPLETE
+===========================================================================

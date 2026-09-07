@@ -1,0 +1,26 @@
+# Customer Issue & Resolution Analysis
+
+-> This document defines the business context, problem, objectives, scope, KPIs, and analytical direction for the Customer Issue & Resolution Analysis project.
+-> It serves as the foundation for the entire project and guides the analysis, evaluation, and business recommendations throughout the project lifecycle.
+
+## 1. Business Scenario of the Organization Under Analysis
+-> The organization operates a customer support function that receives and manages a large volume of customer issues across different products, ticket types, priorities, and support channels, creating an opportunity to analyze support operations and customer experience using data.
+
+## 2. Business Problem Faced by the Organization
+-> The organization has a large amount of customer support data but lacks a clear understanding of ticket workload, issue distribution, ticket status, resolution availability, and customer satisfaction, making it difficult for management to identify important support areas and prioritize operational improvements.
+
+## 3. Business Objectives of the Analysis
+-> Analyze customer support workload and patterns across products, ticket types, issues, priorities, and channels; evaluate ticket status, resolution availability, and customer satisfaction; and provide data-driven insights and practical recommendations to improve support operations and customer experience.
+
+## 4. Key Stakeholders and Their Business Needs
+-> Management and Business Teams: Need clear KPIs and insights to understand overall support performance, identify workload patterns, evaluate customer experience, and prioritize improvement opportunities.
+
+## 5. Scope of the Analysis and Key Business Questions
+-> In Scope: Analyze ticket volume, distribution, status, priority, support channels, resolution availability, and customer satisfaction to identify important patterns and areas requiring attention. 
+-> Out of Scope: Directly changing organizational processes, products, or support systems, or making conclusions that cannot be supported by the available data.
+
+## 6. Key Performance Indicators and Analytical Approach
+-> Key KPIs and Analysis: Measure ticket volume, ticket distribution, ticket status, resolution availability, and customer satisfaction across relevant dimensions using descriptive and diagnostic analysis through SQL, Excel, and Power BI to identify important patterns and support business decision-making.
+
+## 7. Initial Assumptions and Project Limitations
+-> The project uses a simulated customer support dataset created for analytical purposes, and the analysis is therefore limited to the information available in the dataset; observed patterns indicate areas for investigation but should not automatically be treated as proven causes.
